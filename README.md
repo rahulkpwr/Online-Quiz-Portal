@@ -8,7 +8,7 @@ This project allows users to attempt timed exams and admins to manage exams, que
 
 -> User Registration & Login
 
-> View Available Exams
+-> View Available Exams
 
 -> Start Timed Exams (Auto submit on timeout)
 
@@ -41,25 +41,25 @@ This project allows users to attempt timed exams and admins to manage exams, que
 🛠 Tech Stack
 Frontend
 
-React.js
+-> React.js
 
-JavaScript
+-> JavaScript
 
-HTML5
+-> HTML5
 
-CSS (Inline Styling)
+-> CSS (Inline Styling)
 
-Axios
+-> Axios
 
-React Router DOM 
+-> React Router DOM 
 
 Backend
 
-PHP (REST APIs)
+-> PHP (REST APIs)
 
-MySQL
+-> MySQL
 
-Apache (XAMPP)
+-> Apache (XAMPP)
 
 ⚙️ Setup Instructions
 1️⃣ Backend Setup (PHP + MySQL)
@@ -97,63 +97,63 @@ http://localhost:3000
 
 🔐 Authentication & Security
 
-User & Admin sessions stored using localStorage
+1. User & Admin sessions stored using localStorage
 
-Protected routes prevent unauthorized access
+2. Protected routes prevent unauthorized access
 
-Blocked users cannot login
+3. Blocked users cannot login
 
-Auto logout clears session
+4. Auto logout clears session
 
 📸 Screens Implemented
 
-Landing Page
+1.Landing Page
 
-User Login
+2.User Login
 
-Admin Login
+3.Admin Login
 
-Available Exams (Card Layout)
+4.Available Exams (Card Layout)
 
-Exam Interface (Timer)
+5.Exam Interface (Timer)
 
-Result Page
+6.Result Page
 
-History Page
+7.History Page
 
-Admin Dashboard
+8.Admin Dashboard
 
-Add Questions Page
+9.Add Questions Page
 
-View Results Page
+10.View Results Page
 
 🧠 Learning Outcomes
 
-Full-stack development using React + PHP
+1. Full-stack development using React + PHP
 
-REST API integration
+2. REST API integration
 
-Authentication & authorization
+3. Authentication & authorization
 
-Timers & real-time logic
+4. Timers & real-time logic
 
-Database design & joins
+5. Database design & joins
 
-Admin dashboard design
+6. Admin dashboard design
 
-Production-level project structure
+7. Production-level project structure
 
 📌 Future Enhancements
 
-Prevent multiple exam attempts
+1. Prevent multiple exam attempts
 
-Randomized questions per exam
+2. Randomized questions per exam
 
-Graphical analytics dashboard
+3. Graphical analytics dashboard
 
-Export results (CSV/PDF)
+4.Export results (CSV/PDF)
 
-Dark / Light mode
+5.Dark / Light mode
 
 Mobile responsive UI
 
