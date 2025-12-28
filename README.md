@@ -1,70 +1,163 @@
-# Getting Started with Create React App
+🎓 Online Quiz Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Online Quiz Portal with User and Admin roles, built using React, PHP, and MySQL.
+This project allows users to attempt timed exams and admins to manage exams, questions, users, and results through a secure dashboard.
 
-## Available Scripts
+🚀 Features
+👨‍🎓 User Side
 
-In the project directory, you can run:
+-> User Registration & Login
 
-### `npm start`
+> View Available Exams
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-> Start Timed Exams (Auto submit on timeout)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-> Real-time Countdown Timer
 
-### `npm test`
+-> Auto calculation of score
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-> View Exam Result
 
-### `npm run build`
+🔐 Admin Side
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-> Admin Login (separate admin table)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-> Protected Admin Routes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-> Create Exam Categories (Maths, Science, Computer, etc.)
 
-### `npm run eject`
+-> Create Exams with Duration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-> Add MCQ Questions (4 options + correct answer)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-> View All Student Results
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-> Block / Unblock Users
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-> Admin Dashboard with Sidebar Navigation
 
-## Learn More
+-> Logout functionality
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🛠 Tech Stack
+Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+React.js
 
-### Code Splitting
+JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+HTML5
 
-### Analyzing the Bundle Size
+CSS (Inline Styling)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Axios
 
-### Making a Progressive Web App
+React Router DOM 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend
 
-### Advanced Configuration
+PHP (REST APIs)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+MySQL
 
-### Deployment
+Apache (XAMPP)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⚙️ Setup Instructions
+1️⃣ Backend Setup (PHP + MySQL)
 
-### `npm run build` fails to minify
+1.Install XAMPP
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2.Start Apache and MySQL
+
+3.Create database:
+CREATE DATABASE online_quiz_portal;
+
+4.Import provided SQL tables (users, admins, exams, questions, results, categories)
+
+5.Place backend files in:
+C:\xampp\htdocs\quiz-api
+
+6.Update db.php with your DB credentials
+
+2️⃣ Frontend Setup (React)
+npm install
+npm start
+
+App will run at:
+http://localhost:3000
+
+🔑 Default Routes
+
+| Purpose         | URL                |
+| --------------- | ------------------ |
+| Home            | `/`                |
+| User Login      | `/login`           |
+| Admin Login     | `/admin/login`     |
+| User Dashboard  | `/exams`           |
+| Admin Dashboard | `/admin/dashboard` |
+
+🔐 Authentication & Security
+
+User & Admin sessions stored using localStorage
+
+Protected routes prevent unauthorized access
+
+Blocked users cannot login
+
+Auto logout clears session
+
+📸 Screens Implemented
+
+Landing Page
+
+User Login
+
+Admin Login
+
+Available Exams (Card Layout)
+
+Exam Interface (Timer)
+
+Result Page
+
+History Page
+
+Admin Dashboard
+
+Add Questions Page
+
+View Results Page
+
+🧠 Learning Outcomes
+
+Full-stack development using React + PHP
+
+REST API integration
+
+Authentication & authorization
+
+Timers & real-time logic
+
+Database design & joins
+
+Admin dashboard design
+
+Production-level project structure
+
+📌 Future Enhancements
+
+Prevent multiple exam attempts
+
+Randomized questions per exam
+
+Graphical analytics dashboard
+
+Export results (CSV/PDF)
+
+Dark / Light mode
+
+Mobile responsive UI
+
+
+View Past Exam History
+
+Logout functionality
