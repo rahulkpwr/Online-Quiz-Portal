@@ -62,6 +62,8 @@ Backend
 -> Apache (XAMPP)
 
 ⚙️ Setup Instructions
+
+
 1️⃣ Backend Setup (PHP + MySQL)
 
 1.Install XAMPP
@@ -151,13 +153,12 @@ http://localhost:3000
 
 3. Graphical analytics dashboard
 
-4.Export results (CSV/PDF)
+4. Export results (CSV/PDF)
 
-5.Dark / Light mode
+5. Dark / Light mode
 
-Mobile responsive UI
+6. Mobile responsive UI
 
+7. View Past Exam History
 
-View Past Exam History
-
-Logout functionality
+8. Logout functionality
